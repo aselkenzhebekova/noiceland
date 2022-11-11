@@ -1,0 +1,230 @@
+@import "./fonts.css";
+
+:root {
+  --dark: #000000;
+  --light: ;
+}
+
+/* BASE CONFIG */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Serif Pro", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BASE CONFIG */
+
+/* UNIQUE */
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid__col-6 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid__col-4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__col-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* UNIQUE */
+
+/* HEADER */
+.header {
+  height: 90px;
+  border-bottom: 1px solid #E5E5E5;
+  ;
+}
+
+.header>.container {
+  height: 100%;
+}
+
+.header__link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #434343;
+}
+
+.header__burger::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: -10px;
+  background-color: #434343;
+}
+
+.header__burger::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 30px;
+  height: 2px;
+  background-color: #434343;
+}
+
+/* HEADER */
+
+/* JAPAN SECTION */
+.japan {
+  padding: 60px 0 0;
+}
+
+.japan__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 51px;
+}
+
+.japan__img {
+  height: 474px;
+}
+
+.japan__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.japan__suptitle {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.japan__title {
+  margin: 18px 0 27px;
+  font-weight: 400;
+  font-family: 'Tenor Sans';
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.japan__sm-desc {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 28px;
+}
+
+.japan__postscript {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+/* JAPAN SECTION */
+
+/* PHOTO SECTION */
+.photo {
+  padding: 60px 0 90px;
+}
+
+.photo__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 74px;
+}
+
+.photo__link {
+  display: block;
+  width: 100%;
+}
+
+.photo__card {
+  height: auto;
+}
+
+.photo__img {
+  height: 254px;
+}
+
+.photo__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo__title {
+  font-family: 'Tenor Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.photo__suptitle {
+  margin: 24px 0 18px;
+}
+
+.photo__postscript {
+  margin-top: 15px;
+}
+
+/* PHOTO SECTION */
